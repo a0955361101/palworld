@@ -1,5 +1,8 @@
 <script setup>
     import { cultivateData } from '../data/cultivateData';
+    const getImageUrl = (name) => {
+        return new URL(`../images/${name}.jpg`, import.meta.url).href
+    };
 </script>
 
 <template>
@@ -13,15 +16,15 @@
             <div class="list" v-for="item in cultivateData" :key="item.id">
                 <div class="card">
                     <div>
-                        <img v-if="item.manImg" :src="`/palworld/src/images/${item.manImg}.jpg`" alt="">
+                        <img v-if="item.manImg" :src="getImageUrl(item.manImg)" alt="">
                         {{ item.man }}
                     </div>
                     <div>
-                        <img v-if="item.womanImg" :src="`/palworld/src/images/${item.womanImg}.jpg`" alt="">
+                        <img v-if="item.womanImg" :src="getImageUrl(item.womanImg)" alt="">
                         {{ item.woman }}
                     </div>
                     <div>
-                        <img v-if="item.childImg" :src="`/palworld/src/images/${item.childImg}.jpg`" alt="">
+                        <img v-if="item.childImg" :src="getImageUrl(item.childImg)" alt="">
                         {{ item.child }}
                     </div>
                 </div>
