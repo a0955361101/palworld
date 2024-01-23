@@ -5,7 +5,7 @@
 <template>
   <NavBar :paths="[
         { id: 0, pageName: '詞綴', url: '/' },
-        // { id: 1, pageName: '寶可夢', url: '/pokemon' },
+        { id: 1, pageName: '培育', url: '/cultivate' },
     ]">
     </NavBar>
   <router-view></router-view>

@@ -2,9 +2,8 @@
 import { ref } from 'vue';
     import { affixData } from '../data/affixData';
 
-    
-
     const changeColor = (type) => {
+        // 0 為紅 1 為白 2 為金
         if(type === 0){
             return 'red';
         }
@@ -50,7 +49,9 @@ import { ref } from 'vue';
         .skill{
             width: 35%;
         }
-        
+    }
+    .data_list:hover {
+        background: #eee;
     }
     .data_list:nth-child(1), .data_list:nth-child(2), .data_list:nth-child(3){
             border-top: 1px solid #333; 
@@ -61,9 +62,14 @@ import { ref } from 'vue';
     .red{
         background: #ed8585;
     }
-
+    .red:hover {
+        background: #df7e7e;
+    }
     .gold{
         background: #efd684;
+    }
+    .gold:hover {
+        background: #dec77a;
     }
 }
 }
