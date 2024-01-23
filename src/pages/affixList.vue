@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
     import { affixData } from '../data/affixData';
 
     const changeColor = (type) => {

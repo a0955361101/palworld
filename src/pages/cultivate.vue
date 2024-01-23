@@ -1,10 +1,23 @@
 <script setup>
-
+    import { cultivateData } from '../data/cultivateData';
 </script>
 
 <template>
     <div class="cultivate_box">
-        
+        <div class="cultivate">
+            <div class="title">
+                <div>父親</div>
+                <div>母親</div>
+                <div>孩子</div>
+            </div>
+            <div class="list" v-for="item in cultivateData" :key="item.id">
+                <div class="card">
+                    <div>{{ item.man }}</div>
+                    <div>{{ item.woman }}</div>
+                    <div>{{ item.child }}</div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -12,6 +25,44 @@
     .cultivate_box{
         max-width: 1200px;
         margin: 0 auto;
+        .cultivate{
+            width: 100%;
+            .title{
+                display: flex;
+                justify-content: center;
+                div{
+                    width: 20%;
+                    padding: 2vh 0 2vh .5vw;
+                }
+                div:nth-child(1n){
+                        background: #97c5ea;
+                }
+                div:nth-child(2n){
+                        background: #eda3c4;
+                }
+                div:nth-child(3n){
+                        background: #a5efde;
+                }
+            }
+
+            .card{
+                display: flex;
+                justify-content: center;
+                div{
+                    width: 20%;
+                    padding: 2vh 0 2vh .5vw;
+                }
+                div:nth-child(1n){
+                        background: #b3d3ee;
+                }
+                div:nth-child(2n){
+                        background: #f3b8d3;
+                }
+                div:nth-child(3n){
+                        background: #b8f3e5;
+                }
+            }
+        }
     }
 
 </style>
