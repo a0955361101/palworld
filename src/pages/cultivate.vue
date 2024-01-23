@@ -13,15 +13,15 @@
             <div class="list" v-for="item in cultivateData" :key="item.id">
                 <div class="card">
                     <div>
-                        <img v-if="item.manImg" :src="`/palworld/src/images/${item.manImg}.jpg`" alt="">
+                        <img v-if="item.manImg" :src="`../images/${item.manImg}.jpg`" alt="">
                         {{ item.man }}
                     </div>
                     <div>
-                        <img v-if="item.womanImg" :src="`/palworld/src/images/${item.womanImg}.jpg`" alt="">
+                        <img v-if="item.womanImg" :src="`../images/${item.womanImg}.jpg`" alt="">
                         {{ item.woman }}
                     </div>
                     <div>
-                        <img v-if="item.childImg" :src="`/palworld/src/images/${item.childImg}.jpg`" alt="">
+                        <img v-if="item.childImg" :src="`../images/${item.childImg}.jpg`" alt="">
                         {{ item.child }}
                     </div>
                 </div>
