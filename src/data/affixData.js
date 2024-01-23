@@ -1,7 +1,7 @@
 // type 0 = 紅 1 = 白 2 = 金
 export const affixData = [
     {skillName:'偷懶成癮',ability:'工作速度-30%',type:0},
-    {skillName:'笨手笨腳',ability:'笨手笨腳',type:0},
+    {skillName:'笨手笨腳',ability:'工作速度-10%',type:0},
     {skillName:'無底之胃',ability:'增加飽腹度下降速度+15%',type:0},
     {skillName:'貪吃',ability:'增加飽腹度下降速度+10%',type:0},
     {skillName:'毀滅慾望',ability:'增加SAN值下降速度15%',type:0},

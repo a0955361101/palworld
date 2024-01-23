@@ -4,7 +4,7 @@
 
 <template>
   <NavBar :paths="[
-        { id: 0, pageName: '帕魯詞綴', url: '/' },
+        { id: 0, pageName: '詞綴', url: '/' },
         // { id: 1, pageName: '寶可夢', url: '/pokemon' },
     ]">
     </NavBar>

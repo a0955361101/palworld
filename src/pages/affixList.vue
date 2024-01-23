@@ -14,20 +14,18 @@ import { ref } from 'vue';
         else{
             return;
         }
-    }
+    };
 </script>
 
 <template>
     <div class="affixList_box">
         <div class="affixList">
             <div class="data_list" :class="changeColor(item.type)" v-for="item in affixData" :key="item.skillName">
-                <div class="skill">技能: {{ item.skillName }}</div>
-                <div class="ability">能力: {{ item.ability }}</div>
+                <div class="skill">技能:{{ item.skillName }}</div>
+                <div class="ability">能力:{{ item.ability }}</div>
             </div>
         </div>
     </div>
-    
-    
 </template>
 
 <style lang="scss" scoped>
@@ -42,8 +40,10 @@ import { ref } from 'vue';
         display: flex;
         width: 32%;
         padding: 1.5vh 0 1.5vh 0.5vw;
-        border: 1px solid #333;
-        @media (max-width: 375px) {
+        border-bottom: 1px solid #333;
+        border-left: 1px solid #333;
+        
+        @media (max-width: 600px) {
             width: 100%;
             padding: 3vh 0 3vh 1vw;
         }
@@ -52,10 +52,16 @@ import { ref } from 'vue';
         }
         
     }
-    
+    .data_list:nth-child(1), .data_list:nth-child(2), .data_list:nth-child(3){
+            border-top: 1px solid #333; 
+    }
+    .data_list:nth-child(3n), .data_list:last-child{
+            border-right: 1px solid #333; 
+    }
     .red{
         background: #ed8585;
     }
+
     .gold{
         background: #efd684;
     }
