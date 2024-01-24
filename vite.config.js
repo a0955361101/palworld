@@ -6,11 +6,6 @@ export default defineConfig({
   base: "/palworld/",
   plugins: [
     vue(),
-    Components({
-      resolvers: [
-        DevUiResolver()
-      ]
-    })
   ],
   server: {
     port: 3000,
