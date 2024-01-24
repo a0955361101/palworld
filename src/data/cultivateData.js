@@ -791,4 +791,556 @@ export const cultivateData = [
         womanImg:'41',
         childImg:'46',
     },
+];
+
+
+export const optionsList = [
+    {
+        label: '棉悠悠',
+        value: '棉悠悠',
+    },
+    {
+        label: '搗蛋貓',
+        value: '搗蛋貓',
+    },
+    {
+        label: '皮皮雞',
+        value: '皮皮雞',
+    },
+    {
+        label: '翠葉鼠',
+        value: '翠葉鼠',
+    },
+    {
+        label: '火絨狐',
+        value: '火絨狐',
+    },
+    {
+        label: '衝浪鴨',
+        value: '衝浪鴨',
+    },
+    {
+        label: '伏特喵',
+        value: '伏特喵',
+    },
+    {
+        label: '新葉猿',
+        value: '新葉猿',
+    },
+    {
+        label: '燎火鹿',
+        value: '燎火鹿',
+    },
+    {
+        label: '企丸丸',
+        value: '企丸丸',
+    },
+    {
+        label: '企丸王',
+        value: '企丸王',
+    },
+    {
+        label: '電棘鼠',
+        value: '電棘鼠',
+    },
+    {
+        label: '冰刺鼠',
+        value: '冰刺鼠',
+    },
+    {
+        label: '葉泥泥',
+        value: '葉泥泥',
+    },
+    {
+        label: '玉藻狐',
+        value: '玉藻狐',
+    },
+    {
+        label: '啼卡爾',
+        value: '啼卡爾',
+    },
+    {
+        label: '壺小象',
+        value: '壺小象',
+    },
+    {
+        label: '瞅什魔',
+        value: '瞅什魔',
+    },
+    {
+        label: '米露菲',
+        value: '米露菲',
+    },
+    {
+        label: '寐魔',
+        value: '寐魔',
+    },
+    {
+        label: '草莽豬',
+        value: '草莽豬',
+    },
+    {
+        label: '露娜蒂',
+        value: '露娜蒂',
+    },
+    {
+        label: '遁地鼠',
+        value: '遁地鼠',
+    },
+    {
+        label: '勾魂魷',
+        value: '勾魂魷',
+    },
+    {
+        label: '喵絲特',
+        value: '喵絲特',
+    },
+    {
+        label: '冰絲特',
+        value: '冰絲特',
+    },
+    {
+        label: '魯米兒',
+        value: '魯米兒',
+    },
+    {
+        label: '獵狼',
+        value: '獵狼',
+    },
+    {
+        label: '炸蛋鳥',
+        value: '炸蛋鳥',
+    },
+    {
+        label: '波娜兔',
+        value: '波娜兔',
+    },
+    {
+        label: '波霸牛',
+        value: '波霸牛',
+    },
+    {
+        label: '荊棘魔仙',
+        value: '荊棘魔仙',
+    },
+    {
+        label: '鯊小子',
+        value: '鯊小子',
+    },
+    {
+        label: '紅小鯊',
+        value: '紅小鯊',
+    },
+    {
+        label: '吊縛靈',
+        value: '吊縛靈',
+    },
+    {
+        label: '冰縛靈',
+        value: '冰縛靈',
+    },
+    {
+        label: '葉胖達',
+        value: '葉胖達',
+    },
+    {
+        label: '雷胖達',
+        value: '雷胖達',
+    },
+    {
+        label: '棉花糖',
+        value: '棉花糖',
+    },
+    {
+        label: '灌木羊',
+        value: '灌木羊',
+    },
+    {
+        label: '美露帕',
+        value: '美露帕',
+    },
+    {
+        label: '紫霞鹿',
+        value: '紫霞鹿',
+    },
+    {
+        label: '祈岳鹿',
+        value: '祈岳鹿',
+    },
+    {
+        label: '疾風隼',
+        value: '疾風隼',
+    },
+    {
+        label: '姬小兔',
+        value: '姬小兔',
+    },
+    {
+        label: '炎魔羊',
+        value: '炎魔羊',
+    },
+    {
+        label: '暗魔羊',
+        value: '暗魔羊',
+    },
+    {
+        label: '幻悅蝶',
+        value: '幻悅蝶',
+    },
+    {
+        label: '熾焰牛',
+        value: '熾焰牛',
+    },
+    {
+        label: '趴趴鯰',
+        value: '趴趴鯰',
+    },
+    {
+        label: '黑鴉隱士',
+        value: '黑鴉隱士',
+    },
+    {
+        label: '龐克蜥',
+        value: '龐克蜥',
+    },
+    {
+        label: '熱血蜥',
+        value: '熱血蜥',
+    },
+    {
+        label: '月鐮魔',
+        value: '月鐮魔',
+    },
+    {
+        label: '天擒鳥',
+        value: '天擒鳥',
+    },
+    {
+        label: '羽箭射手',
+        value: '羽箭射手',
+    },
+    {
+        label: '山岳射手',
+        value: '山岳射手',
+    },
+    {
+        label: '鐵拳猿',
+        value: '鐵拳猿',
+    },
+    {
+        label: '騎士蜂',
+        value: '騎士蜂',
+    },
+    {
+        label: '女皇蜂',
+        value: '女皇蜂',
+    },
+    {
+        label: '笑魘貓',
+        value: '笑魘貓',
+    },
+    {
+        label: '毛撣兒',
+        value: '毛撣兒',
+    },
+    {
+        label: '毛老爹',
+        value: '毛老爹',
+    },
+    {
+        label: '疾旋鼬',
+        value: '疾旋鼬',
+    },
+    {
+        label: '雷角馬',
+        value: '雷角馬',
+    },
+    {
+        label: '吹雪狐',
+        value: '吹雪狐',
+    },
+    {
+        label: '火麒麟',
+        value: '火麒麟',
+    },
+    {
+        label: '邪麒麟',
+        value: '邪麒麟',
+    },
+    {
+        label: '嚴冬鹿',
+        value: '嚴冬鹿',
+    },
+    {
+        label: '霹靂犬',
+        value: '霹靂犬',
+    },
+    {
+        label: '蒼焰狼',
+        value: '蒼焰狼',
+    },
+    {
+        label: '雷鳴童子',
+        value: '雷鳴童子',
+    },
+    {
+        label: '秘斯媞雅',
+        value: '秘斯媞雅',
+    },
+    {
+        label: '花冠龍',
+        value: '花冠龍',
+    },
+    {
+        label: '雷冠龍',
+        value: '雷冠龍',
+    },
+    {
+        label: '滑水蛇',
+        value: '滑水蛇',
+    },
+    {
+        label: '流沙蛇',
+        value: '流沙蛇',
+    },
+    {
+        label: '噬魂獸',
+        value: '噬魂獸',
+    },
+    {
+        label: '碎岩龜',
+        value: '碎岩龜',
+    },
+    {
+        label: '貓蝠怪',
+        value: '貓蝠怪',
+    },
+    {
+        label: '博愛蜥',
+        value: '博愛蜥',
+    },
+    {
+        label: '融焰娘',
+        value: '融焰娘',
+    },
+    {
+        label: '烽歌龍',
+        value: '烽歌龍',
+    },
+    {
+        label: '霜歌龍',
+        value: '霜歌龍',
+    },
+    {
+        label: '浪刃武士',
+        value: '浪刃武士',
+    },
+    {
+        label: '迅雷鳥',
+        value: '迅雷鳥',
+    },
+    {
+        label: '燧火鳥',
+        value: '燧火鳥',
+    },
+    {
+        label: '暗巫貓',
+        value: '暗巫貓',
+    },
+    {
+        label: '焰巫狐',
+        value: '焰巫狐',
+    },
+    {
+        label: '踏春兔',
+        value: '踏春兔',
+    },
+    {
+        label: '薇莉塔',
+        value: '薇莉塔',
+    },
+    {
+        label: '綢笠蛾',
+        value: '綢笠蛾',
+    },
+    {
+        label: '精靈龍',
+        value: '精靈龍',
+    },
+    {
+        label: '水靈龍',
+        value: '水靈龍',
+    },
+    {
+        label: '水靈兒',
+        value: '水靈兒',
+    },
+    {
+        label: '火靈兒',
+        value: '火靈兒',
+    },
+    {
+        label: '碧海龍',
+        value: '碧海龍',
+    },
+    {
+        label: '冰棘獸',
+        value: '冰棘獸',
+    },
+    {
+        label: '獄焰王',
+        value: '獄焰王',
+    },
+    {
+        label: '獄閻王',
+        value: '獄閻王',
+    },
+    {
+        label: '佩克龍',
+        value: '佩克龍',
+    },
+    {
+        label: '派克龍',
+        value: '派克龍',
+    },
+    {
+        label: '連理龍',
+        value: '連理龍',
+    },
+    {
+        label: '海誓龍',
+        value: '海誓龍',
+    },
+    {
+        label: '花麗娜',
+        value: '花麗娜',
+    },
+    {
+        label: '熔岩獸',
+        value: '熔岩獸',
+    },
+    {
+        label: '寒霜獸',
+        value: '寒霜獸',
+    },
+    {
+        label: '君王美露帕',
+        value: '君王美露帕',
+    },
+    {
+        label: '冰帝美露帕',
+        value: '冰帝美露帕',
+    },
+    {
+        label: '森猛獁',
+        value: '森猛獁',
+    },
+    {
+        label: '雪猛獁',
+        value: '雪猛獁',
+    },
+    {
+        label: '白絨雪怪',
+        value: '白絨雪怪',
+    },
+    {
+        label: '綠苔絨怪',
+        value: '綠苔絨怪',
+    },
+    {
+        label: '鎧格力斯',
+        value: '鎧格力斯',
+    },
+    {
+        label: '雲海鹿',
+        value: '雲海鹿',
+    },
+    {
+        label: '夜幕魔蝠',
+        value: '夜幕魔蝠',
+    },
+    {
+        label: '天羽龍',
+        value: '天羽龍',
+    },
+    {
+        label: '焰煌',
+        value: '焰煌',
+    },
+    {
+        label: '雷冥鳥',
+        value: '雷冥鳥',
+    },
+    {
+        label: '魔淵龍',
+        value: '魔淵龍',
+    },
+    {
+        label: '冥鎧蠍',
+        value: '冥鎧蠍',
+    },
+    {
+        label: '阿努比斯',
+        value: '阿努比斯',
+    },
+    {
+        label: '覆海龍',
+        value: '覆海龍',
+    },
+    {
+        label: '騰炎龍',
+        value: '騰炎龍',
+    },
+    {
+        label: '朱雀',
+        value: '朱雀',
+    },
+    {
+        label: '清雀',
+        value: '清雀',
+    },
+    {
+        label: '暴電熊',
+        value: '暴電熊',
+    },
+    {
+        label: '百合女王',
+        value: '百合女王',
+    },
+    {
+        label: '黑月女王',
+        value: '黑月女王',
+    },
+    {
+        label: '荷魯斯',
+        value: '荷魯斯',
+    },
+    {
+        label: '波魯杰克斯',
+        value: '波魯杰克斯',
+    },
+    {
+        label: '異構格里芬',
+        value: '異構格里芬',
+    },
+    {
+        label: '聖光騎士',
+        value: '聖光騎士',
+    },
+    {
+        label: '混沌騎士',
+        value: '混沌騎士',
+    },
+    {
+        label: '喚冬獸',
+        value: '喚冬獸',
+    },
+    {
+        label: '喚夜獸',
+        value: '喚夜獸',
+    },
+    {
+        label: '空渦龍',
+        value: '空渦龍',
+    },
 ]

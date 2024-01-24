@@ -1,24 +1,39 @@
 <script setup>
     import { ref } from 'vue';
-    import { cultivateData } from '../data/cultivateData';
+    import { cultivateData, optionsList } from '../data/cultivateData';
     const getImageUrl = (name) => {
         return new URL(`../images/${name}.jpg`, import.meta.url).href
     };
     const copyData = ref(cultivateData);
-    const selectInput = ref('');
+    const value = ref('');
+    const options = ref(optionsList);
+
+
+
     const selectFun = () => {
-        if(selectInput.value === ''){
+        if(value.value === ''){
+            copyData.value = cultivateData;
             return;
         }
         const selectData = copyData.value.filter((v) => {
-            return v.child === selectInput.value;
+            return v.child === value.value;
         })
         copyData.value = selectData;
-        console.log(copyData.value);
+        // console.log(copyData.value);
     };
 
-    const selectClearFun = () => {
-        copyData.value = cultivateData;
+    const handleInputChange = (val) => {
+        // console.log(val);
+    };
+
+    const filterMethod = (query) => {
+        if (query) {
+            options.value = options.value.filter((item) => {
+                return item.label.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+            });
+        } else {
+            options.value = [];
+        }
     };
 </script>
 
@@ -26,9 +41,7 @@
     <div class="cultivate_box">
         <div class="cultivate">
             <div class="select_btn">
-                <input type="text" v-model="selectInput">
-                <div @click="selectFun()">搜尋</div>
-                <div @click="selectClearFun()">清除</div>
+                <d-editable-select placeholder="子代查詢" @change="selectFun()" :filter-method="filterMethod" allow-clear @input-change="handleInputChange" v-model="value" :options="options" :width="350"></d-editable-select>
             </div>
             <div class="list" v-for="item in copyData" :key="item.id">
                 <div class="card">
@@ -80,8 +93,13 @@
                         margin: 2vh 0 0 0;
                     }
                 }
-                :hover{
+                div:hover{
                     background: #eee;
+                }
+                label{
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1vw;
                 }
                 input{
                     width: 25vw;
