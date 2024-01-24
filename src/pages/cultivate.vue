@@ -34,12 +34,14 @@
                 <div class="card">
                     <div>
                         <img v-if="item.manImg" :src="getImageUrl(item.manImg)" alt="">
-                        {{ item.man }}
+                        {{ item.man }} 
                     </div>
+                    <div>+</div>
                     <div>
                         <img v-if="item.womanImg" :src="getImageUrl(item.womanImg)" alt="">
                         {{ item.woman }}
                     </div>
+                    <div>=</div>
                     <div>
                         <img v-if="item.childImg" :src="getImageUrl(item.childImg)" alt="">
                         {{ item.child }}
@@ -95,10 +97,14 @@
             .card{
                 display: flex;
                 justify-content: center;
+                border-radius: 6px;
+                box-shadow: 3px 5px 5px #ddd;
+                background-color: #eee;
+                margin-bottom: 2vh;
+                align-items: center;
                 div{
                     display: flex;
                     align-items: center;
-                    // justify-content: center;
                     width: 33.3%;
                     padding: 2vh 0 2vh .5vw;
                     @media (max-width: 600px) {
@@ -114,16 +120,19 @@
                         display: block;
                     }
                 }
-                div:nth-child(1n){
-                        background: #b3d3ee;
-                }
-                div:nth-child(2n){
-                        background: #f3b8d3;
-                }
-                div:nth-child(3n){
-                        background: #b8f3e5;
-                }
+                // div:nth-child(1n){
+                //         background: #b3d3ee;
+                // }
+                // div:nth-child(2n){
+                //         background: #f3b8d3;
+                // }
+                // div:nth-child(3n){
+                //         background: #b8f3e5;
+                // }
             }
+            .card:hover {
+                    background-color: #ccc;
+                }
         }
     }
 
