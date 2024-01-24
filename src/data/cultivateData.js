@@ -373,7 +373,7 @@ export const cultivateData = [
         man:'毛撣兒',
         woman:'喵絲特',
         child:'草莽豬',
-        manImg:'',
+        manImg:'53',
         womanImg:'24',
         childImg:'20',
     },

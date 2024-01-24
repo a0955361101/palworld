@@ -60,6 +60,12 @@
                 display: flex;
                 justify-content: center;
                 margin: 0 0 4.5vh 0;
+                text-align: center;
+                @media (max-width: 600px) {
+                        width: 100vw;
+                        align-items: center;
+                        flex-direction: column;
+                    }
                 div{
                     margin-left: 1vw;
                     color: #333;
@@ -67,6 +73,10 @@
                     padding: .3vw;
                     border-radius: 3px;
                     box-shadow: 3px 5px 5px #eee;
+                    @media (max-width: 600px) {
+                        width: 50vw;
+                        margin: 2vh 0 0 0;
+                    }
                 }
                 :hover{
                     background: #eee;
