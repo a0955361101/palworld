@@ -65,7 +65,7 @@ const changeNumberId = (id) => {
                 text-align: center;
                 border: 1px solid #eee;
                 border-radius: 6px;
-                width: 24%;
+                width: 23%;
                 margin-bottom: 2vh;
                 position: relative;
                 margin-right: .85vw;
