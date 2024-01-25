@@ -5,10 +5,14 @@ const getImageUrl = (name) => {
 };
 
 const changeNumberId = (id) => {
+    // console.log(id.indexOf('B'));
+    if(id.indexOf('B') == 2){
+        return '0' + id;
+    }
     if(id < 10){
         return '00' + id;
     }
-    else if(id > 10){
+    else if(id > 10 && id < 100){
         return '0' + id;
     }
     else{
@@ -22,7 +26,7 @@ const changeNumberId = (id) => {
     <div class="library_box">
         <div class="library">
             <div class="card" v-for="item in libraryData" :key="item.id">
-                <div class="card_img"><img :src="getImageUrl(item.id)" alt=""></div>
+                <div class="card_img"><img v-if="item.id" :src="getImageUrl(item.id)" alt=""></div>
                 <div><span>No.{{ changeNumberId(item.id) }}</span> {{ item.name }}</div>
                 <div>食量 {{ item.eat }}</div>
                 <div class="skill_list">
@@ -39,6 +43,7 @@ const changeNumberId = (id) => {
                     <span v-if="item.carry">搬運 {{ item.carry }}</span>
                     <span v-if="item.pasture">畜牧 {{ item.pasture }}</span>
                 </div>
+                <div>屬性: {{ item.attributes }}</div>
                 <div class="skill">技能:{{ item.skill }}</div>
                 <div class="skill_detailed">{{ item.detailedSkill }}</div>
                 <div>掉落物:{{ item.item }}</div>
@@ -55,19 +60,22 @@ const changeNumberId = (id) => {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
-            justify-content:space-between;
+            // justify-content:space-between;
             .card{
                 text-align: center;
-                border: 1px solid #333;
+                border: 1px solid #eee;
                 border-radius: 6px;
                 width: 24%;
                 margin-bottom: 2vh;
                 position: relative;
+                margin-right: .85vw;
+                box-shadow: 3px 5px 5px #ddd;
                 @media (max-width: 600px) {
                         width: 48%;
                     }
                 img{
                     width: 100%;
+                    border-radius: 6px 6px 0 0;
                 }
                 .card_img{
                     width: 100%;
@@ -93,6 +101,9 @@ const changeNumberId = (id) => {
                 .skill:hover+.skill_detailed{
                     display: block;
                 }
+            }
+            .card:nth-child(4n){
+                margin-right: 0;
             }
         }
     }
