@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import affixList from '../pages/affixList.vue';
 import cultivate from '../pages/cultivate.vue';
+import library from '../pages/library.vue';
 
 
 const routes = [
@@ -11,6 +12,10 @@ const routes = [
     {
         path: "/cultivate",
         component: cultivate,
+    },
+    {
+        path: "/library",
+        component: library,
     },
 ];
 
